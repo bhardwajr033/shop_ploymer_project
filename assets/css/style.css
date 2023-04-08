@@ -127,3 +127,60 @@ footer {
   font-size: 12px;
   padding-top: 10px;
 }
+
+/* For tablet */
+
+@media all and (min-width: 768px) {
+  /* header */
+
+  .header-menu-icon {
+    visibility: hidden;
+  }
+
+  /* top link bar */
+
+  .top-link-bar {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    font-size: 12px;
+    font-weight: 300;
+    height: 40px;
+    margin-top: 25px;
+  }
+
+  /* shop-style */
+
+  .shop-style {
+    height: 490px;
+  }
+
+  .shop-image-container {
+    height: 320px;
+  }
+
+  .shop-style-image {
+    height: 320px;
+  }
+
+  .shop-style-title {
+    margin-top: 25px;
+  }
+
+  .shop-style-button {
+    margin-top: 13px;
+    width: 170px;
+  }
+
+  /* custom-style */
+
+  .costom-style .shop-style-button {
+    width: 170px;
+  }
+
+  /* footer */
+  .demo-only {
+    width: 120px;
+    font-size: 14px;
+  }
+}
