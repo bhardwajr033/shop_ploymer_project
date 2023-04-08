@@ -184,3 +184,16 @@ footer {
     font-size: 14px;
   }
 }
+
+/*FOR 1080p desktop*/
+
+@media all and (min-width: 1440px) {
+  /* costom style*/
+  .costom-style {
+    display: flex;
+    justify-content: center;
+  }
+  .costom-style .shop-style {
+    width: 720px;
+  }
+}
