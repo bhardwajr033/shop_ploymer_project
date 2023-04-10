@@ -13,6 +13,11 @@ body {
   width: 100%;
 }
 
+.divlink {
+  text-decoration: none !important;
+  color: inherit;
+}
+
 /* header */
 
 header {
@@ -30,6 +35,8 @@ header {
   font-weight: 600;
   letter-spacing: 5px;
   margin-top: 25px;
+  text-decoration:none;
+  color: inherit;
 }
 
 .header-cart-icon {
@@ -89,6 +96,10 @@ header {
   height: auto;
   max-width: 480px;
   width: auto/9;
+}
+
+.outfit-items:hover{
+  cursor: pointer;
 }
 
 .outfit-image-container {

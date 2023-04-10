@@ -35,6 +35,8 @@ header {
   font-weight: 600;
   letter-spacing: 5px;
   margin-top: 25px;
+  text-decoration:none;
+  color: inherit;
 }
 
 .header-cart-icon {
