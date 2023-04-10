@@ -1,0 +1,140 @@
+/*Mobile First Approach*/
+
+html,
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-size: 16px;
+}
+
+body {
+  width: 100%;
+}
+
+/* header */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  height: 65px;
+}
+
+.header-menu-icon {
+  width: 22px;
+  margin-left: 25px;
+}
+
+.header-title {
+  font-weight: 600;
+  letter-spacing: 5px;
+  margin-top: 25px;
+}
+
+.header-cart-icon {
+  width: 22px;
+  margin-right: 25px;
+}
+
+/* top link bar */
+
+.top-link-bar {
+  display: none;
+}
+
+/* shop style (banner)*/
+
+.shop-style {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 60px;
+  gap: 0;
+}
+
+.style-image-container {
+  display: none;
+}
+
+.shop-style-title {
+  font-size: 13px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.shop-style-items {
+  font-size: 11px;
+  font-weight: 300;
+  padding-bottom: 10px;
+}
+
+/* outfits */
+
+.outfit {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.outfit-items {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 50%;
+  align-items: center;
+  height: auto;
+  margin-bottom: 7%;
+}
+
+.outfit-image-container {
+  width: auto/9;
+  height: auto;
+}
+
+.outfit-image {
+  width: 85%;
+  height: 85%;
+  max-height: 300;
+  max-width: 300;
+  padding-left: 7.5%;
+  padding-right: 7.5%;
+}
+
+.outfit-name {
+  font-size: 13px;
+  font-weight: 600;
+  margin-top: 5%;
+}
+
+.outfit-price {
+  font-size: 12px;
+  font-weight: 300;
+  object-fit: contain;
+}
+
+/*footer*/
+
+footer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 60px;
+  margin-top: 20px;
+}
+
+.source-link {
+  font-size: 11px;
+  font-weight: 300;
+  padding-bottom: 12px;
+}
+
+.demo-only {
+  height: 30px;
+  width: 120px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  font-size: 13px;
+  padding-top: 12px;
+}
