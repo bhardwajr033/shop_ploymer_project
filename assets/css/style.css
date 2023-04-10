@@ -95,11 +95,11 @@ header {
 
 /* Costom style */
 
-.costom-style {
+.custom-style {
   display: flex;
 }
 
-.costom-style .shop-style-button {
+.custom-style .shop-style-button {
   width: 130px;
 }
 
@@ -174,7 +174,7 @@ footer {
 
   /* custom-style */
 
-  .costom-style .shop-style-button {
+  .custom-style .shop-style-button {
     width: 170px;
   }
 
@@ -189,11 +189,11 @@ footer {
 
 @media all and (min-width: 1440px) {
   /* costom style*/
-  .costom-style {
+  .custom-style {
     display: flex;
     justify-content: center;
   }
-  .costom-style .shop-style {
+  .custom-style .shop-style {
     width: 720px;
   }
 }
