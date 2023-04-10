@@ -13,6 +13,11 @@ body {
   width: 100%;
 }
 
+.divlink {
+  text-decoration: none !important;
+  color: inherit;
+}
+
 /* header */
 
 header {
@@ -65,8 +70,6 @@ header {
 
 .shop-style-title {
   font-weight: 400;
-  text-decoration: none !important;
-  color: inherit;
 }
 
 .shop-style-button {
