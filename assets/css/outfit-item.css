@@ -1,0 +1,153 @@
+/*Mobile First Approach*/
+
+html,
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-size: 16px;
+}
+
+body {
+  width: 100%;
+}
+
+.divlink {
+  text-decoration: none !important;
+  color: inherit;
+}
+
+/* header */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  height: 65px;
+}
+
+.header-menu-icon {
+  width: 22px;
+  margin-left: 25px;
+}
+
+.header-title {
+  font-weight: 600;
+  letter-spacing: 5px;
+  margin-top: 25px;
+}
+
+.header-cart-icon {
+  width: 22px;
+  margin-right: 25px;
+}
+
+/* top link bar */
+
+.top-link-bar {
+  display: none;
+}
+
+/* section */
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* outfit image */
+
+.outfit-img-container {
+  display: flex;
+  justify-content: center;
+  width: auto/9;
+  height: auto;
+}
+
+.outfit-image {
+  width: 80%;
+  height: 80%;
+  padding-left: 7.5%;
+  padding-right: 7.5%;
+}
+
+/* outfit info */
+
+.outfit-info {
+    max-width: 520px;
+  margin-top: 35px;
+  margin-left: 25px;
+}
+
+.outfit-name {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.outfit-price {
+  font-size: 12px;
+  font-weight: 300;
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+
+.size-selector,
+.quantity-selector {
+  display: flex;
+  justify-content: space-between;
+  border-top: solid 1px lightgray;
+  height: 50px;
+}
+
+.size-selector + .quantity-selector {
+  border-bottom: solid 1px lightgray;
+}
+
+.size-selector p,
+.quantity-selector p {
+  font-size: 12px;
+  font-weight: 200;
+  padding-top: 10px;
+}
+
+#selector {
+  width: 80%;
+  border: 0px;
+  outline: 0px;
+  background: none;
+}
+
+/* description */
+.outfit-description{
+    font-size:12px;
+    font-weight: 200;
+    margin-top: 40px;
+    margin-bottom: 120px;
+    line-height: 1.2rem;
+}
+
+.description-title{
+    font-weight: 600;
+}
+
+.features-list{
+    margin-left: 40px;
+}
+
+/* Add to cart button */
+
+.add-to-cart-button{
+    position:fixed;
+    bottom:0;
+    height: 60px;
+    width:100%;
+    color: white;
+    background-color: rgb(32, 32, 92);
+    border: none;
+}
+
+/* footer */
+footer {
+  display: none;
+}
