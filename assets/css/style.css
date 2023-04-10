@@ -65,6 +65,8 @@ header {
 
 .shop-style-title {
   font-weight: 400;
+  text-decoration: none !important;
+  color: inherit;
 }
 
 .shop-style-button {
