@@ -35,7 +35,7 @@ header {
   font-weight: 600;
   letter-spacing: 5px;
   margin-top: 25px;
-  text-decoration:none;
+  text-decoration: none;
   color: inherit;
 }
 
@@ -139,7 +139,7 @@ section {
 
 /* Add to cart button */
 
-.add-to-cart-button {
+.add-to-cart-button-mobile {
   position: fixed;
   bottom: 0;
   height: 60px;
@@ -147,6 +147,10 @@ section {
   color: white;
   background-color: rgb(32, 32, 92);
   border: none;
+}
+
+.add-to-cart-button-desktop {
+  display: none;
 }
 
 /* footer */
@@ -198,30 +202,33 @@ footer {
     max-width: 400px;
   }
 
-  .outfit-name{
+  .outfit-name {
     font-size: 22px;
   }
 
-  .outfit-price{
+  .outfit-price {
     font-size: 14px;
     font-weight: 300;
   }
 
-  .features-list{
+  .features-list {
     margin-left: 22px;
   }
 
   /* add to cart button */
 
-  .add-to-cart-button{
+  .add-to-cart-button-mobile {
+    display: none;
+  }
+
+  .add-to-cart-button-desktop {
+    display: inline;
     color: black;
     background-color: white;
     border: 2px solid black;
     width: 190px;
     height: 35px;
-    position: relative;
-    left: 60%;
-    bottom: 80px;
+    margin-top: 10px;
   }
 
   /*footer*/
