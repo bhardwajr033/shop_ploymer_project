@@ -26,9 +26,22 @@ header {
   height: 65px;
 }
 
-.header-menu-icon {
-  width: 22px;
+.go-back-icon {
+  margin-top: 20px;
   margin-left: 25px;
+}
+
+.go-back-icon img{
+  width: 22px;
+}
+
+.header-cart-icon {
+  margin-top: 20px;
+  margin-right: 25px;
+}
+
+.header-cart-icon img{
+  width: 22px;
 }
 
 .header-title {

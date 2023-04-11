@@ -40,8 +40,12 @@ header {
 }
 
 .header-cart-icon {
-  width: 22px;
+  margin-top: 20px;
   margin-right: 25px;
+}
+
+.header-cart-icon img{
+  width: 22px;
 }
 
 /* top link bar */
