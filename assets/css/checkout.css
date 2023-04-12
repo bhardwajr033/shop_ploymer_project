@@ -1,0 +1,303 @@
+/*Mobile First Approach*/
+
+html,
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-size: 16px;
+}
+
+body {
+  width: 100%;
+}
+
+.divlink {
+  text-decoration: none !important;
+  color: inherit;
+}
+
+/* header */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.6rem 1rem 0.6rem 1rem;
+}
+
+.header-menu-icon {
+  padding-top: 0.2rem;
+  width: 1.4rem;
+}
+
+.header-title {
+  font-weight: 600;
+  letter-spacing: 0.3rem;
+  padding-top: 1rem;
+}
+
+.header-cart-icon {
+  padding-top: 0.8rem;
+}
+
+.header-cart-icon img {
+  width: 1.375rem;
+}
+
+/* checkout title */
+
+.checkout-title {
+  text-align: center;
+}
+
+.checkout {
+  font-size: 0.875rem;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+  margin-top: 0;
+}
+
+.demo-info {
+  font-size: 0.75rem;
+  font-weight: 300;
+  color: #757575;
+  margin: 0;
+}
+
+/* section */
+
+section {
+  display: flex;
+  flex-direction: column;
+  padding: 0 1.5rem 3rem 1.5rem;
+  margin-bottom: 4rem;
+}
+
+/* customer info */
+
+.info-heading {
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.state-and-pin {
+  display: flex;
+  gap: 3%;
+}
+
+.state-and-pin .inputbox {
+  width: 48%;
+}
+
+.expiry-and-cvv {
+  display: flex;
+  gap: 3%;
+  margin-left: -45px;
+}
+
+.expiry-and-cvv .inputbox {
+  width: 30%;
+}
+
+.expiry-and-cvv select {
+  width: 30%;
+}
+
+.expiry-and-cvv .select-box-name {
+  left: 2.8125rem;
+}
+
+.billing-address-text {
+  font-size: 0.875rem;
+  font-weight: 300;
+  margin-left: 0.625rem;
+}
+
+/* order items */
+
+.ordered-item,
+.total-price {
+  font-size: 0.75rem;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 400;
+  line-height: 0.3125rem;
+}
+
+.total-price {
+  margin-top: 3.125rem;
+}
+
+/* select Box */
+
+.select-box-name {
+  font-size: 0.75rem;
+  font-weight: 400;
+  position: relative;
+  margin: 0;
+}
+
+select {
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 0;
+  height: 3.3125rem;
+  padding: 0;
+  border: 0;
+  border-bottom: 1px solid lightgray;
+  letter-spacing: 0.15em;
+  border-radius: 0;
+  width: 100%;
+  background: none;
+  padding-top: 1.5em;
+}
+
+select:focus,
+select:active {
+  outline: 0;
+  border-bottom: 2px solid rgb(0, 0, 60);
+}
+
+/* inputbox */
+
+.form-control {
+  border-bottom: 1px solid lightgray !important;
+  border: none;
+  height: 3.125rem;
+  width: 100%;
+}
+
+.form-control:focus {
+  color: #495057;
+  outline: 0;
+  box-shadow: none;
+  border-radius: 0px;
+  border-bottom: 2px solid rgb(0, 0, 60) !important;
+}
+
+.inputbox {
+  position: relative;
+  margin-bottom: 1.25rem;
+  width: 100%;
+}
+
+.inputbox span {
+  position: absolute;
+  top: 1.5625rem;
+  left: 0;
+  transition: 0.2s;
+  color: #757575;
+  font-weight: 300;
+  pointer-events: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.inputbox input:focus ~ span {
+  transform: translateX(-0px) translateY(-25px);
+  font-size: 0.75rem;
+}
+
+.inputbox input:valid ~ span {
+  transform: translateX(-0px) translateY(-25px);
+  font-size: 0.75rem;
+}
+
+/* place order button */
+
+.place-order-button-desktop {
+  display: none;
+}
+
+.place-order-button-mobile {
+  position: fixed;
+  bottom: 0;
+  height: 3.75rem;
+  width: 100%;
+  color: white;
+  background-color: rgb(32, 32, 92);
+  border: none;
+}
+
+/* footer */
+
+footer {
+  display: none;
+}
+
+@media all and (min-width: 768px) {
+  /* header */
+
+  .header-menu-icon {
+    visibility: hidden;
+  }
+  /* checkout title */
+
+  .checkout-title {
+    margin-top: 4rem;
+    margin-bottom: 1.5rem;
+  }
+
+  /* section */
+  section {
+    max-width: 56.25rem;
+    margin: auto;
+    flex-direction: row;
+    gap: 10%;
+    padding: 0 5% 0 5%;
+    margin-bottom: 6.25rem;
+  }
+
+  .customer-info {
+    width: 45%;
+  }
+
+  .payment-and-order-info {
+    width: 45%;
+  }
+
+  /* place order button */
+
+  .place-order-button-mobile {
+    display: none;
+  }
+
+  .place-order-button-desktop {
+    display: inline;
+    color: black;
+    background-color: white;
+    border: 2px solid black;
+    width: 190px;
+    height: 40px;
+  }
+
+  /*footer*/
+
+  footer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 3.75rem;
+  }
+
+  .source-link {
+    font-size: 0.75rem;
+    font-weight: 300;
+    padding-bottom: 0.625rem;
+  }
+
+  .demo-only {
+    height: 30px;
+    width: 120px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 0.875rem;
+    padding-top: 0.625rem;
+  }
+}

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home - SHOP</title>
+    <link rel="icon" href="/assets/images/favicon.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- font-family: 'Poppins', sans-serif; -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/assets/css/normalize.css" />
+    <link rel="stylesheet" href="/assets/css/checkout.css" />
+  </head>
+  <body>
+    <header>
+      <img src="/assets/images/menu-icon.svg" alt="" class="header-menu-icon" />
+      <a class="header-title divlink" href="index.html">SHOP</a>
+      <a href="cart.html" class="header-cart-icon"
+        ><img src="/assets/images/cart-icon.svg" alt=""
+      /></a>
+    </header>
+    <div class="checkout-title">
+      <h3 class="checkout">Checkout</h3>
+      <h4 class="demo-info">Shop is a demo app - form data will not be sent</h4>
+    </div>
+    <section>
+      <div class="customer-info">
+        <form>
+        <h4 class="info-heading">Account Information</h4>
+        <div class="inputbox email">
+          <input
+            type="email"
+            name="email"
+            class="form-control"
+            required="required"
+          />
+          <span>Email</span>
+        </div>
+        <div class="inputbox phone-number">
+          <input
+            type="number"
+            name="phone-number"
+            class="form-control"
+            required="required"
+          />
+          <span>Phone number</span>
+        </div>
+        <h4 class="info-heading">Shipping Adress</h4>
+        <div class="inputbox address">
+          <input
+            type="text"
+            name="address"
+            class="form-control"
+            required="required"
+          />
+          <span>Address</span>
+        </div>
+        <div class="inputbox city">
+          <input
+            type="text"
+            name="city"
+            class="form-control"
+            required="required"
+          />
+          <span>City</span>
+        </div>
+        <div class="state-and-pin">
+          <div class="inputbox state">
+            <input
+              type="text"
+              name="state"
+              class="form-control"
+              required="required"
+            />
+            <span>State/Province</span>
+          </div>
+          <div class="inputbox postalcode">
+            <input
+              type="number"
+              name="postalcode"
+              class="form-control"
+              required="required"
+            />
+            <span>Zip/Postal Code</span>
+          </div>
+        </div>
+        <div class="country">
+          <label class="select-box-name">Country</label>
+          <select name="Country" id="country">
+            <option value="India">India</option>
+            <option value="Bangladesh">Bangladesh</option>
+          </select>
+        </div>
+        <h4 class="info-heading">Billing Address</h4>
+        <div class="billing-address">
+        <input type="checkbox" class="checkbox"/>
+        <label class="billing-address-text">Use different billing address</label>
+        </div>
+        </form>
+      </div>
+      <div class="payment-and-order-info">
+        <form>
+        <h4 class="info-heading">Payment Heading</h4>
+        <div class="inputbox cardholder-name">
+          <input
+            type="text"
+            name="cardholder-name"
+            class="form-control"
+            required="required"
+          />
+          <span>Cardholder Name</span>
+        </div>
+        <div class="inputbox card-number">
+          <input
+            type="number"
+            name="card-number"
+            class="form-control"
+            required="required"
+          />
+          <span>Card Number</span>
+        </div>
+        <div class="expiry-and-cvv">
+          <label class="select-box-name">Expiry</label>
+          <select name="Expiry" id="expiry">
+            <option value="Jan">Jan</option>
+            <option value="Feb">Feb</option>
+            <option value="Mar">Mar</option>
+            <option value="Apr">Apr</option>
+            <option value="May">May</option>
+            <option value="Jun">Jun</option>
+            <option value="Jul">Jul</option>
+            <option value="Aug">Aug</option>
+            <option value="Sep">Sep</option>
+            <option value="Oct">Oct</option>
+            <option value="Nov">Nov</option>
+            <option value="Dec">Dec</option>
+          </select>
+          <select name="year" id="year">
+            <option value="2022">2022</option>
+            <option value="2023">2024</option>
+            <option value="2025">2025</option>
+            <option value="2026">2026</option>
+            <option value="2027">2027</option>
+            <option value="2028">2028</option>
+            <option value="2029">2029</option>
+            <option value="2030">2030</option>
+            <option value="2031">2031</option>
+            <option value="2032">2032</option>
+          </select>
+          <div class="inputbox cvv">
+            <input
+              type="number"
+              name="cvv"
+              class="form-control"
+              required="required"
+            />
+            <span>CVV</span>
+          </div>
+        </div>
+        <h4 class="info-heading">Order Summary</h4>
+        <div class="order-items">
+          <h5 class="ordered-item">
+            Men's Tech Shell Full-Zip <span class="item-price">$50.20</span>
+          </h5>
+          <h5 class="ordered-item">
+            Men's Tech Shell Full-Zip <span class="item-price">$50.20</span>
+          </h5>
+          <h5 class="ordered-item">
+            Men's Tech Shell Full-Zip <span class="item-price">$50.20</span>
+          </h5>
+        </div>
+        <h5 class="total-price">
+          Total <span class="total-price-ammount">$150.60</span>
+        </h5>
+        <button class="place-order-button-desktop">Place Order</button>
+        </form>
+      </div>
+    </section>
+    <button class="place-order-button-mobile">Place Order</button>
+    <footer>
+      <div class="source-link">Rahul Bhardwaj</div>
+      <div class="demo-only">DEMO ONLY</div>
+    </footer>
+  </body>
+</html>
