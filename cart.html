@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Your - cart</title>
+    <link rel="icon" href="/assets/images/favicon.png" type="image/png">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <!-- font-family: 'Poppins', sans-serif; -->
@@ -20,7 +21,7 @@
   <body>
     <header>
       <img src="/assets/images/menu-icon.svg" alt="" class="header-menu-icon" />
-      <a class="header-title" href="index.html">SHOP</a>
+      <a class="header-title divlink" href="index.html">SHOP</a>
       <img src="/assets/images/cart-icon.svg" alt="" class="header-cart-icon" />
     </header>
     <section>
@@ -117,10 +118,10 @@
       </div>
       <div class="total-and-checkout">
         <div class="total-price">Total:<span>$150.60</span></div>
-        <button class="checkout-button-desktop">CHECKOUT</button>
+        <button class="checkout-button-desktop" onclick="window.location.href='checkout.html';">CHECKOUT</button>
       </div>
     </section>
-    <button class="checkout-button-mobile">CHECKOUT</button>
+    <button class="checkout-button-mobile" onclick="window.location.href='checkout.html';">CHECKOUT</button>
     <footer>
       <div class="source-link">Rahul Bhardwaj</div>
       <div class="demo-only">DEMO ONLY</div>

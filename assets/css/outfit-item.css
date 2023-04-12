@@ -9,10 +9,6 @@ body {
   font-size: 16px;
 }
 
-body {
-  width: 100%;
-}
-
 .divlink {
   text-decoration: none !important;
   color: inherit;
@@ -23,38 +19,31 @@ body {
 header {
   display: flex;
   justify-content: space-between;
-  height: 65px;
-}
-
-.go-back-icon {
-  margin-top: 20px;
-  margin-left: 25px;
-}
-
-.go-back-icon img{
-  width: 22px;
-}
-
-.header-cart-icon {
-  margin-top: 20px;
-  margin-right: 25px;
-}
-
-.header-cart-icon img{
-  width: 22px;
+  padding: 0.6rem 1rem 0.6rem 1rem;
 }
 
 .header-title {
   font-weight: 600;
-  letter-spacing: 5px;
-  margin-top: 25px;
-  text-decoration: none;
-  color: inherit;
+  letter-spacing: 0.3rem;
+  padding-top: 1rem;
 }
 
 .header-cart-icon {
-  width: 22px;
-  margin-right: 25px;
+  padding-top: 0.8rem;
+}
+
+.header-cart-icon img {
+  width: 1.375rem;
+}
+
+.go-back-icon {
+  padding-top: 0.8rem;
+  padding-left: 0.5rem;
+  width: 1.4rem;
+}
+
+.go-back-icon img{
+  width: 1.375rem;
 }
 
 /* top link bar */
@@ -69,6 +58,7 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 0 1.5rem;
 }
 
 /* outfit image */
@@ -76,13 +66,11 @@ section {
 .outfit-img-container {
   display: flex;
   justify-content: center;
-  width: auto/9;
-  height: auto;
 }
 
 .outfit-image {
-  width: 80%;
-  height: 80%;
+  width: 90%;
+  height: 90%;
   padding-left: 7.5%;
   padding-right: 7.5%;
 }
@@ -90,21 +78,20 @@ section {
 /* outfit info */
 
 .outfit-info {
-  max-width: 520px;
-  margin-top: 35px;
-  margin-left: 25px;
+  max-width: 32.5rem;
+  margin-top: 2.2rem;
 }
 
 .outfit-name {
-  font-size: 18px;
-  font-weight: 400;
+  font-size: 1.125rem;
+  font-weight: 600;
 }
 
 .outfit-price {
-  font-size: 12px;
+  font-size: 0.75rem;
   font-weight: 300;
-  margin-top: 15px;
-  margin-bottom: 30px;
+  margin-top: 0.9375rem;
+  margin-bottom: 1.875rem;
 }
 
 .size-selector,
@@ -112,7 +99,7 @@ section {
   display: flex;
   justify-content: space-between;
   border-top: solid 1px lightgray;
-  height: 50px;
+  height: 3.125rem;
 }
 
 .size-selector + .quantity-selector {
@@ -121,9 +108,9 @@ section {
 
 .size-selector p,
 .quantity-selector p {
-  font-size: 12px;
+  font-size: 0.75rem;
   font-weight: 200;
-  padding-top: 10px;
+  padding-top: 0.625rem;
 }
 
 #selector {
@@ -135,10 +122,10 @@ section {
 
 /* description */
 .outfit-description {
-  font-size: 12px;
-  font-weight: 200;
-  margin-top: 40px;
-  margin-bottom: 120px;
+  font-size: 0.6875rem;
+  font-weight: 300;
+  margin-top: 2.5rem;
+  margin-bottom: 7.5rem;
   line-height: 1.2rem;
 }
 
@@ -146,16 +133,13 @@ section {
   font-weight: 600;
 }
 
-.features-list {
-  margin-left: 40px;
-}
 
 /* Add to cart button */
 
 .add-to-cart-button-mobile {
   position: fixed;
   bottom: 0;
-  height: 60px;
+  height: 3.75rem;
   width: 100%;
   color: white;
   background-color: rgb(32, 32, 92);
@@ -179,18 +163,17 @@ footer {
   .top-link-bar {
     display: flex;
     justify-content: center;
-    gap: 40px;
-    font-size: 12px;
+    gap: 2.5rem;
+    font-size: 0.75rem;
     font-weight: 400;
-    height: 40px;
-    margin-top: 25px;
+    margin-top: 2rem;
   }
 
   /* section */
 
   section {
     flex-direction: row;
-    margin-top: 50px;
+    margin-top: 5rem;
     align-items: flex-start;
   }
 
@@ -198,12 +181,11 @@ footer {
 
   .outfit-img-container {
     width: 50%;
-    margin-left: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
   }
 
   .outfit-image {
-    width: 90%;
-    height: 90%;
     padding: 0;
   }
 
@@ -212,20 +194,26 @@ footer {
   .outfit-info {
     width: 40%;
     margin: 0;
-    max-width: 400px;
+    max-width: 25rem;
   }
 
   .outfit-name {
-    font-size: 22px;
+    font-size: 1.375rem;
+    font-weight: 400;
   }
 
   .outfit-price {
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: 300;
   }
 
-  .features-list {
-    margin-left: 22px;
+  .outfit-description{
+    color: #757575;
+    font-size: 0.75rem;
+  }
+
+  .description-title{
+    color: black;
   }
 
   /* add to cart button */
@@ -239,9 +227,9 @@ footer {
     color: black;
     background-color: white;
     border: 2px solid black;
-    width: 190px;
-    height: 35px;
-    margin-top: 10px;
+    width: 11.9rem;
+    height: 2.2rem;
+    margin-top: 0.625rem;
   }
 
   /*footer*/
@@ -250,22 +238,22 @@ footer {
     display: flex;
     align-items: center;
     flex-direction: column;
-    height: 60px;
+    height: 3.75rem;
   }
 
   .source-link {
-    font-size: 13px;
+    font-size: 0.8125rem;
     font-weight: 300;
-    padding-bottom: 10px;
+    padding-bottom: 0.625rem;
   }
 
   .demo-only {
-    height: 30px;
-    width: 120px;
+    height: 1.875rem;
+    width: 7.5rem;
     background-color: black;
     color: white;
     text-align: center;
-    font-size: 14px;
-    padding-top: 10px;
+    font-size: 0.875rem;
+    padding-top: 0.625rem;
   }
 }
